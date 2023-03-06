@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<body>
+
+    <h2>Alerta con Jquery</h2>
+    <h2>Bienvenido Al Tecnologico De Martinez</h2>
+    <button onclick="myFunction()">iniciar sesión</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(){
+            var txt;
+            if(confirm("Haz Click para iniciar sesión")){
+                txt = "Inicio sesión correctamente"
+            }else{
+                txt = "No ha iniciado sesión correctamente"
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>
